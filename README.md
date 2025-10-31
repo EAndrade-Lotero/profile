@@ -8,5 +8,4 @@ I collaborate closely with the Percepts & Concepts Laboratory led by Prof. Rober
 
 In parallel, I explore applications of AI in education and automated reasoning. In education, I co-develop intelligent tutoring systems with CEAP at Universidad del Rosario, integrating large language models and cognitive architectures. In automated reasoning, I work on translating normative and regulatory language into executable logical representations using semantic parsing and reinforcement learning.
 
-<img width="442" height="387" alt="image" src="https://github.com/user-attachments/assets/6534bdaa-4e99-41aa-9ed5-964134f29c3a" />
 
