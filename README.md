@@ -1,4 +1,4 @@
-# Edgar Andrade-Lotero
+# About me
 
 I am an Associate Professor in the School of Science and Engineering at Universidad del Rosario in Bogotá, Colombia. Beginning in December 2025, I will serve as a Postdoctoral Fellow in the Department of Communication at the University of California, Davis, collaborating with Prof. Seth Frey. I hold a B.Sc. in Mathematics from the National University of Colombia (2002), an M.Sc. in Logic from the Universiteit van Amsterdam (2006)—supported by the Nuffic scholarship for outstanding international students—and a Ph.D. in Logic from the same institution (2012).
 
