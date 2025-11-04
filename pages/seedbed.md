@@ -74,3 +74,5 @@ Envía un correo indicando tu semestre, intereses y experiencia técnica. Adjunt
 ## Contacto
 Director: **Edgar Andrade** · Grupo de investigación: **TICMA** · Universidad del Rosario  
 Correo: [edgar.andrade@urosario.edu.co](mailto:edgar.andrade@urosario.edu.co)
+
+[Back to my profile](/README.md)
