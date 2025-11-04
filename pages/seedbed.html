@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semillero: Representación del Conocimiento — Universidad del Rosario</title>
+  <meta name="description" content="Semillero de investigación 'Representación del Conocimiento' adscrito al grupo TICMA. Objetivos, líneas, actividades, requisitos y contacto." />
+  <style>
+    :root{
+      --bg: #0b1020;         /* page background */
+      --panel: #0f152b;      /* cards */
+      --panel-2:#111936;     /* alt panels */
+      --text:#e6eaf2;        /* primary text */
+      --muted:#b7bfd3;       /* secondary text */
+      --brand:#7dd3fc;       /* cyan */
+      --accent:#a78bfa;      /* violet */
+      --ok:#34d399;          /* green */
+      --chip:#1f2a4c;        /* chip bg */
+      --ring: 0 0 0 3px rgba(125, 211, 252, .25);
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:var(--sans); color:var(--text); background: radial-gradient(1200px 800px at 10% -10%, #19366b 0%, transparent 60%), radial-gradient(900px 700px at 110% 10%, #37196b 0%, transparent 55%), var(--bg);
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* Layout */
+    .container{width:min(1100px, 92vw); margin-inline:auto}
+    header{position:sticky; top:0; backdrop-filter:saturate(180%) blur(8px); background-color: rgba(11,16,32,.65); border-bottom:1px solid rgba(255,255,255,.06); z-index:20}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.9rem 0}
+    .brand{display:flex; align-items:center; gap:.8rem}
+    .logo{width:36px; height:36px; border-radius:10px; display:grid; place-items:center; background:linear-gradient(135deg, var(--brand), var(--accent)); box-shadow:var(--shadow)}
+    .brand h1{font-size:1.05rem; line-height:1.2; margin:0}
+    .cta{display:flex; gap:.6rem}
+    .btn{display:inline-flex; align-items:center; gap:.5rem; border:1px solid rgba(255,255,255,.12); border-radius:999px; padding:.55rem .9rem; color:var(--text); background:transparent; cursor:pointer}
+    .btn:hover{border-color:rgba(255,255,255,.3)}
+    .btn.primary{background:linear-gradient(135deg, var(--brand), var(--accent)); color:#0b1020; border:none}
+
+    /* Hero */
+    .hero{padding: clamp(2rem, 6vw, 4rem) 0 2rem}
+    .hero h2{font-size:clamp(1.6rem, 3.2vw, 2.2rem); margin:.2rem 0 0; color:var(--muted)}
+    .pill{
+      display:inline-flex; align-items:center; gap:.5rem; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); padding:.35rem .7rem; border-radius:999px; font-size:.9rem; color:var(--muted)
+    }
+
+    /* Grid cards */
+    .grid{display:grid; grid-template-columns: repeat(12, 1fr); gap:1rem}
+    .card{grid-column: span 12; background:linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%); border:1px solid rgba(255,255,255,.08); border-radius:var(--radius); padding:1.2rem; box-shadow:var(--shadow)}
+    .card h3{margin:.2rem 0 1rem}
+    .card p{color:var(--muted); line-height:1.7}
+    .kicker{font-weight:600; letter-spacing:.08em; text-transform:uppercase; font-size:.78rem; color:var(--brand)}
+    .muted{color:var(--muted)}
+
+    /* Lists */
+    ul.clean{list-style:none; padding:0; margin:.2rem 0}
+    ul.clean li{display:flex; gap:.7rem; padding:.45rem .3rem; align-items:flex-start}
+    .dot{width:.9rem; height:.9rem; flex:0 0 .9rem; border-radius:50%; background:linear-gradient(135deg, var(--brand), var(--accent)); margin-top:.35rem}
+
+    /* Metadata */
+    .meta{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:1rem}
+    .meta .item{background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:1rem}
+    .item .label{font-size:.8rem; color:var(--muted)}
+    .item .value{font-weight:600}
+
+    /* Chips */
+    .chips{display:flex; flex-wrap:wrap; gap:.5rem}
+    .chip{background:var(--chip); border:1px solid rgba(255,255,255,.08); color:#cfe3ff; padding:.4rem .7rem; border-radius:999px; font-size:.9rem}
+
+    /* Footer */
+    footer{padding:2rem 0 3rem; color:var(--muted)}
+    .footgrid{display:grid; gap:1rem; grid-template-columns:repeat(12, 1fr)}
+    .footcard{grid-column: span 12; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.06); border-radius:var(--radius); padding:1rem}
+
+    /* Responsive */
+    @media (min-width: 780px){
+      .card.span-7{grid-column: span 7}
+      .card.span-5{grid-column: span 5}
+      .card.span-8{grid-column: span 8}
+      .card.span-4{grid-column: span 4}
+    }
+
+    /* Accessible focus */
+    :focus-visible{outline:none; box-shadow:var(--ring)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand" aria-label="Semillero Representación del Conocimiento">
+        <div class="logo" aria-hidden="true">
+          <!-- Minimal knowledge icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="12" cy="12" r="2.2" fill="currentColor"/>
+          </svg>
+        </div>
+        <div>
+          <strong>Semillero: Representación del Conocimiento</strong>
+          <div class="muted" style="font-size:.85rem">Universidad del Rosario · Grupo TICMA</div>
+        </div>
+      </div>
+      <div class="cta">
+        <a class="btn" href="#contacto">Contacto</a>
+        <a class="btn primary" href="#unete">Únete</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="pill">Maker · Implementación práctica de IA</span>
+      <h1 style="font-size:clamp(2rem,4.2vw,3rem); margin:.6rem 0 .4rem">Representación del Conocimiento</h1>
+      <h2>Semillero de investigación adscrito al grupo <strong>TICMA</strong> (Tecnología, Ingeniería, Ciencias y Matemáticas)</h2>
+    </section>
+
+    <!-- Metadata -->
+    <section class="grid" aria-labelledby="meta-t">
+      <div class="card span-7">
+        <div class="kicker" id="meta-t">Ficha técnica</div>
+        <div class="meta" style="margin-top:.8rem">
+          <div class="item"><div class="label">Director</div><div class="value">Edgar Andrade</div></div>
+          <div class="item"><div class="label">Correo</div><div class="value"><a href="mailto:edgar.andrade@urosario.edu.co">edgar.andrade@urosario.edu.co</a></div></div>
+          <div class="item"><div class="label">Creación</div><div class="value">2022</div></div>
+        </div>
+        <p style="margin-top:1rem" class="muted">Sede: Escuela de Ciencias e Ingeniería · Universidad del Rosario. Web oficial: <em>en construcción</em>.</p>
+      </div>
+      <div class="card span-5">
+        <div class="kicker">Tipo de semillero EICT</div>
+        <h3 style="margin:.4rem 0 0">Maker</h3>
+        <p class="muted">Enfocado en la <strong>implementación</strong> de algoritmos y herramientas de IA que respalden investigación aplicada en representación del conocimiento y PLN.</p>
+        <div class="chips" style="margin-top:.6rem">
+          <span class="chip">Código abierto</span>
+          <span class="chip">Sesiones guiadas</span>
+          <span class="chip">Snippets en Python</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Descripción -->
+    <section class="grid" aria-labelledby="desc-t" style="margin-top:1rem">
+      <article class="card span-12">
+        <div class="kicker" id="desc-t">Descripción</div>
+        <p>Somos un equipo conformado por estudiantes y profesores interesados en el estudio de diferentes <strong>técnicas de representación del conocimiento</strong> y la creación de <strong>herramientas para análisis de información en lenguaje natural</strong>.</p>
+      </article>
+    </section>
+
+    <!-- Objetivos -->
+    <section class="grid" aria-labelledby="obj-t" style="margin-top:1rem">
+      <div class="card span-8">
+        <div class="kicker" id="obj-t">Objetivos</div>
+        <ul class="clean" aria-label="Lista de objetivos">
+          <li><span class="dot" aria-hidden="true"></span><span>Estudiar en detalle <strong>Monte Carlo Tree Search (MCTS)</strong> combinado con <strong>Deep Reinforcement Learning (DeepRL)</strong>, técnicas que impulsaron <em>AlphaGo</em>, el primer sistema en vencer al campeón reinante de Go.</span></li>
+          <li><span class="dot" aria-hidden="true"></span><span>Aplicar MCTS para crear motores que resuelvan <strong>juegos competitivos de dos jugadores</strong>; en particular, abordar <strong>finales de ajedrez</strong>.</span></li>
+          <li><span class="dot" aria-hidden="true"></span><span>Perfeccionar un <strong>Deep Semantic Parsing</strong> en desarrollo: una herramienta que toma un texto y produce su <strong>representación semántica</strong> de manera automática.</span></li>
+        </ul>
+      </div>
+      <aside class="card span-4">
+        <div class="kicker">Requisitos sugeridos</div>
+        <ul class="clean">
+          <li><span class="dot" aria-hidden="true"></span><span>Programación de computadores</span></li>
+          <li><span class="dot" aria-hidden="true"></span><span>Probabilidad y Estadística I</span></li>
+          <li><span class="dot" aria-hidden="true"></span><span>Teoría de la Computación</span></li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Líneas de investigación -->
+    <section class="grid" aria-labelledby="lineas-t" style="margin-top:1rem">
+      <div class="card span-12">
+        <div class="kicker" id="lineas-t">Líneas de investigación</div>
+        <div class="chips" style="margin-top:.6rem">
+          <span class="chip">Representaciones semánticas</span>
+          <span class="chip">Redes neuronales &amp; Aprendizaje por refuerzo</span>
+          <span class="chip">Técnicas clásicas de IA</span>
+          <span class="chip">Procesamiento del lenguaje natural</span>
+          <span class="chip">Razonamiento &amp; QA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Actividades semestre -->
+    <section class="grid" aria-labelledby="act-t" style="margin-top:1rem">
+      <div class="card span-7">
+        <div class="kicker" id="act-t">Actividades 2025-II</div>
+        <ul class="clean">
+          <li><span class="dot" aria-hidden="true"></span><span>Sesiones periódicas de presentación de temas clave y revisión de avances.</span></li>
+          <li><span class="dot" aria-hidden="true"></span><span>Apoyo a la actividad conjunta mediante contribución de <em>snippets</em> en Python, según el estado de implementación de los algoritmos.</span></li>
+        </ul>
+      </div>
+      <div class="card span-5" id="unete">
+        <div class="kicker">¿Te interesa participar?</div>
+        <h3 style="margin:.4rem 0">Únete al semillero</h3>
+        <p class="muted">Envía un correo indicando tu semestre, intereses y experiencia técnica. Adjunta (si tienes) enlaces a repositorios o proyectos.</p>
+        <a class="btn primary" href="mailto:edgar.andrade@urosario.edu.co?subject=Interés%20en%20Semillero%20Representaci%C3%B3n%20del%20Conocimiento">Postular por correo</a>
+      </div>
+    </section>
+
+    <!-- Preguntas frecuentes / extras -->
+    <section class="grid" aria-labelledby="faq-t" style="margin-top:1rem">
+      <div class="card span-12">
+        <div class="kicker" id="faq-t">Preguntas rápidas</div>
+        <details>
+          <summary>¿Debo conocer MCTS o DeepRL antes de entrar?</summary>
+          <p class="muted">No es obligatorio, pero ayuda. En el semillero cubrimos fundamentos y recomendamos recursos para ponerte al día.</p>
+        </details>
+        <details>
+          <summary>¿Hay sitio web del semillero?</summary>
+          <p class="muted">Por ahora, la web oficial está en construcción. Esta página funciona como portada informativa.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="grid" aria-labelledby="contacto" style="margin-top:1rem">
+      <div class="card span-12 footcard">
+        <div class="kicker" id="contacto">Contacto</div>
+        <p class="muted">Director: <strong>Edgar Andrade</strong> · Grupo de investigación: <strong>TICMA</strong> · Universidad del Rosario</p>
+        <p>Correo: <a href="mailto:edgar.andrade@urosario.edu.co">edgar.andrade@urosario.edu.co</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footgrid">
+      <div class="footcard">
+        <small>© <span id="y"></span> Semillero Representación del Conocimiento · Universidad del Rosario. Hecho con HTML + CSS.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // dynamic year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
