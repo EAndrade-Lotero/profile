@@ -12,4 +12,4 @@ In parallel, I explore applications of AI in education and automated reasoning. 
 
 * Teaching
 
-* [Research seedbed](/pages/seedbed.html)
+* [Research seedbed](/pages/seedbed.md)
