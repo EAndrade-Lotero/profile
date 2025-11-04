@@ -1,95 +1,9 @@
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Semillero: Representación del Conocimiento — Universidad del Rosario</title>
-  <meta name="description" content="Semillero de investigación 'Representación del Conocimiento' adscrito al grupo TICMA. Objetivos, líneas, actividades, requisitos y contacto." />
-  <style>
-    :root{
-      --bg: #0b1020;         /* page background */
-      --panel: #0f152b;      /* cards */
-      --panel-2:#111936;     /* alt panels */
-      --text:#e6eaf2;        /* primary text */
-      --muted:#b7bfd3;       /* secondary text */
-      --brand:#7dd3fc;       /* cyan */
-      --accent:#a78bfa;      /* violet */
-      --ok:#34d399;          /* green */
-      --chip:#1f2a4c;        /* chip bg */
-      --ring: 0 0 0 3px rgba(125, 211, 252, .25);
-      --radius: 16px;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --sans: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; font-family:var(--sans); color:var(--text); background: radial-gradient(1200px 800px at 10% -10%, #19366b 0%, transparent 60%), radial-gradient(900px 700px at 110% 10%, #37196b 0%, transparent 55%), var(--bg);
-    }
-    a{color:var(--brand); text-decoration:none}
-    a:hover{text-decoration:underline}
+---
+layout: default
+title: Semillero: Representación del Conocimiento
+permalink: /seedbed/
+---
 
-    /* Layout */
-    .container{width:min(1100px, 92vw); margin-inline:auto}
-    header{position:sticky; top:0; backdrop-filter:saturate(180%) blur(8px); background-color: rgba(11,16,32,.65); border-bottom:1px solid rgba(255,255,255,.06); z-index:20}
-    .nav{display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.9rem 0}
-    .brand{display:flex; align-items:center; gap:.8rem}
-    .logo{width:36px; height:36px; border-radius:10px; display:grid; place-items:center; background:linear-gradient(135deg, var(--brand), var(--accent)); box-shadow:var(--shadow)}
-    .brand h1{font-size:1.05rem; line-height:1.2; margin:0}
-    .cta{display:flex; gap:.6rem}
-    .btn{display:inline-flex; align-items:center; gap:.5rem; border:1px solid rgba(255,255,255,.12); border-radius:999px; padding:.55rem .9rem; color:var(--text); background:transparent; cursor:pointer}
-    .btn:hover{border-color:rgba(255,255,255,.3)}
-    .btn.primary{background:linear-gradient(135deg, var(--brand), var(--accent)); color:#0b1020; border:none}
-
-    /* Hero */
-    .hero{padding: clamp(2rem, 6vw, 4rem) 0 2rem}
-    .hero h2{font-size:clamp(1.6rem, 3.2vw, 2.2rem); margin:.2rem 0 0; color:var(--muted)}
-    .pill{
-      display:inline-flex; align-items:center; gap:.5rem; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); padding:.35rem .7rem; border-radius:999px; font-size:.9rem; color:var(--muted)
-    }
-
-    /* Grid cards */
-    .grid{display:grid; grid-template-columns: repeat(12, 1fr); gap:1rem}
-    .card{grid-column: span 12; background:linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%); border:1px solid rgba(255,255,255,.08); border-radius:var(--radius); padding:1.2rem; box-shadow:var(--shadow)}
-    .card h3{margin:.2rem 0 1rem}
-    .card p{color:var(--muted); line-height:1.7}
-    .kicker{font-weight:600; letter-spacing:.08em; text-transform:uppercase; font-size:.78rem; color:var(--brand)}
-    .muted{color:var(--muted)}
-
-    /* Lists */
-    ul.clean{list-style:none; padding:0; margin:.2rem 0}
-    ul.clean li{display:flex; gap:.7rem; padding:.45rem .3rem; align-items:flex-start}
-    .dot{width:.9rem; height:.9rem; flex:0 0 .9rem; border-radius:50%; background:linear-gradient(135deg, var(--brand), var(--accent)); margin-top:.35rem}
-
-    /* Metadata */
-    .meta{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:1rem}
-    .meta .item{background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:1rem}
-    .item .label{font-size:.8rem; color:var(--muted)}
-    .item .value{font-weight:600}
-
-    /* Chips */
-    .chips{display:flex; flex-wrap:wrap; gap:.5rem}
-    .chip{background:var(--chip); border:1px solid rgba(255,255,255,.08); color:#cfe3ff; padding:.4rem .7rem; border-radius:999px; font-size:.9rem}
-
-    /* Footer */
-    footer{padding:2rem 0 3rem; color:var(--muted)}
-    .footgrid{display:grid; gap:1rem; grid-template-columns:repeat(12, 1fr)}
-    .footcard{grid-column: span 12; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.06); border-radius:var(--radius); padding:1rem}
-
-    /* Responsive */
-    @media (min-width: 780px){
-      .card.span-7{grid-column: span 7}
-      .card.span-5{grid-column: span 5}
-      .card.span-8{grid-column: span 8}
-      .card.span-4{grid-column: span 4}
-    }
-
-    /* Accessible focus */
-    :focus-visible{outline:none; box-shadow:var(--ring)}
-  </style>
-</head>
-<body>
   <header>
     <div class="container nav">
       <div class="brand" aria-label="Semillero Representación del Conocimiento">
@@ -238,5 +152,3 @@
     // dynamic year
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
-</body>
-</html>
