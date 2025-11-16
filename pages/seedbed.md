@@ -51,4 +51,4 @@ Envíanos un correo indicando tu semestre, intereses y experiencia técnica.
 Director: Edgar Andrade
 Correo: [edgar.andrade@urosario.edu.co](mailto:edgar.andrade@urosario.edu.co)
 
-[Back to my profile](/profile/README)
+[Back to my profile](/profile/)
