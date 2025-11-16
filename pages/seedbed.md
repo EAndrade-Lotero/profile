@@ -12,7 +12,7 @@ Nos enfocamos en la implementación de algoritmos y herramientas de IA que respa
 
 ## Ficha técnica
 - **Director:** Edgar Andrade  
-- **Tipo de semillero:** Maker · Implementación práctica de IA
+- **Tipo de semillero:** Maker (Implementación práctica de IA)
 - **Afiliación:** Grupo TICMA, Universidad del Rosario
 - **Fecha de creación:** 2022
 
@@ -26,9 +26,9 @@ Nos enfocamos en la implementación de algoritmos y herramientas de IA que respa
 
 ## Objetivos 2025-II
 
-- Estudiar en detalle la técnica de **Monte Carlo Tree Search (MCTS)** combinado con **Deep Reinforcement Learning (DeepRL)**, técnicas que impulsaron *AlphaGo*, el primer sistema en vencer al campeón reinante de Go y su versión más general, *AlphaZero*.
-- Aplicar AlphaZero para crear motores que resuelvan **juegos competitivos de dos jugadores**; en particular, abordar **finales de ajedrez**.
-- Perfeccionar un **Deep Semantic Parsing** en desarrollo: una herramienta que toma un texto y produce su representación lógica de manera automática.
+- Estudiar en detalle la técnica de Monte Carlo Tree Search (MCTS) combinado con Deep Reinforcement Learning (DeepRL), técnicas que impulsaron AlphaGo, el primer sistema en vencer al campeón reinante de Go y su versión más general, AlphaZero.
+- Aplicar AlphaZero para crear motores que resuelvan juegos competitivos de dos jugadores; en particular, abordar finales de ajedrez.
+- Perfeccionar un Deep Semantic Parsing en desarrollo: una herramienta que toma un texto y produce su representación lógica de manera automática.
 
 ## Repositorio oficial
 
@@ -45,8 +45,7 @@ El código que estamos usando puede consultarse en [este repositorio](https://gi
 
 ## ¿Te interesa participar?
 
-**Únete al semillero**  
-Envía un correo indicando tu semestre, intereses y experiencia técnica. Adjunta (si tienes) enlaces a repositorios o proyectos.  
+Envíanos un correo indicando tu semestre, intereses y experiencia técnica.
 
 **Contacto**
 Director: Edgar Andrade
