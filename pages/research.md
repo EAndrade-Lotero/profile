@@ -19,6 +19,28 @@ My research projects can be summarized in the following topics:
 ### Cognitive Science and Group cognition
 
 
+**Power in hierarchical roles**
+
+In this project, we study the dynamics of small groups organized into hierarchical roles. Our goal is to understand how different distributions of power shape the group’s social contract, and how these choices affect outcomes such as efficiency, fairness, and well-being. By identifying general relationships between role structure, power, and performance, we aim to contribute to research on online governance and collective intelligence.
+
+To make these questions concrete, we are running a large-scale online experiment in which foragers collect resources from the environment. Group performance depends in part on a coordinator, who invests in information about resource locations and assigns foragers to initial positions.
+
+<img src="/assets/images/research/coordinator_and_forager_experiment.png"
+     alt="Coordinator and Foragers experiment"
+     width="500">
+
+We represent the social contract along three dimensions that jointly determine how resources are distributed and how much autonomy foragers retain. This framework lets us locate and compare characteristic organizational arrangements within a single space.
+
+![Space of Social contracts](/assets/images/research/social_contracts_space.png)
+
+Using an iterated-learning design, we will examine which arrangements tend to persist and converge when different roles are given the authority to modify the social contract.
+
+![Distribution of arrangements](/assets/images/research/distributions_of_organization_type.png)
+
+This approach allows us to ask: if decision power rests with the coordinator (the higher-ranking role), do groups gravitate toward tighter hierarchical control? If a forager holds that power, do groups move toward more egalitarian structures? And what organizational form emerges when the system is optimized for well-being?
+
+
+**Papers in this line**
 
 - The emergence of role specialization
 - Self-organization of division of cognitive labor
