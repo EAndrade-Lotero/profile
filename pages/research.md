@@ -25,17 +25,21 @@ In this project, we study the dynamics of small groups organized into hierarchic
 
 To make these questions concrete, we are running a large-scale online experiment in which foragers collect resources from the environment. Group performance depends in part on a coordinator, who invests in information about resource locations and assigns foragers to initial positions.
 
-<img src="/assets/images/research/coordinator_and_forager_experiment.png"
+<img src="../assets/images/research/coordinator_and_forager_experiment.png"
      alt="Coordinator and Foragers experiment"
      width="500">
 
 We represent the social contract along three dimensions that jointly determine how resources are distributed and how much autonomy foragers retain. This framework lets us locate and compare characteristic organizational arrangements within a single space.
 
-![Space of Social contracts](/assets/images/research/social_contracts_space.png)
+<img src="../assets/images/research/social_contracts_space.png"
+     alt="Space of Social contracts"
+     width="500">
 
 Using an iterated-learning design, we will examine which arrangements tend to persist and converge when different roles are given the authority to modify the social contract.
 
-![Distribution of arrangements](/assets/images/research/distributions_of_organization_type.png)
+<img src="../assets/images/research/distributions_of_organization_type.png"
+     alt="Distribution of arrangements"
+     width="500">
 
 This approach allows us to ask: if decision power rests with the coordinator (the higher-ranking role), do groups gravitate toward tighter hierarchical control? If a forager holds that power, do groups move toward more egalitarian structures? And what organizational form emerges when the system is optimized for well-being?
 
