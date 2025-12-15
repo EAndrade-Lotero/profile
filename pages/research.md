@@ -44,7 +44,7 @@ Using an iterated-learning design, we will examine which arrangements tend to pe
 This approach allows us to ask: if decision power rests with the coordinator (the higher-ranking role), do groups gravitate toward tighter hierarchical control? If a forager holds that power, do groups move toward more egalitarian structures? And what organizational form emerges when the system is optimized for well-being?
 
 
-**Papers in this line**
+**Papers in the topic of group cognition**
 
 - The emergence of role specialization
 - Self-organization of division of cognitive labor
