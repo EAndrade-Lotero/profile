@@ -19,7 +19,7 @@ My research projects can be summarized in the following topics:
 ### Cognitive Science and Group cognition
 
 
-**Power in hierarchical roles**
+**Cultural evolution of power**
 
 In this project, we study the dynamics of small groups organized into hierarchical roles. Our goal is to understand how different distributions of power shape the group’s social contract, and how these choices affect outcomes such as efficiency, fairness, and well-being. By identifying general relationships between role structure, power, and performance, we aim to contribute to research on online governance and collective intelligence.
 
