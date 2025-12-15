@@ -3,3 +3,6 @@ description: Profesional webpage
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-slate
+url: "https://eandrade-lotero.github.io/profile/"
+plugins:
+  - jekyll-sitemap
