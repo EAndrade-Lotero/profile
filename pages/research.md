@@ -6,7 +6,7 @@ permalink: /research/
 
 # Research interests
 
-My research sits at the intersection of cognitive science and artificial intelligence, with a focus on the cognitive basis of collective behavior. I study how humans learn to coordinate and specialize into roles, giving rise to structured groups. To do so, I combine behavioral experiments (both controlled lab studies and large-scale deployments) with computational cognitive models that illuminate strategic coordination and group decision-making. 
+My broader research interest centers on understanding how group characteristics—such as efficiency, cooperation, and equity—depend on a system comprising three factors: individual capabilities, social structure, and the physical environment in which interaction takes place.
 
 My research projects can be summarized in the following topics:
 
