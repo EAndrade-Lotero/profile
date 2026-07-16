@@ -4,9 +4,6 @@ I am an Associate Professor at the School of Sciences and Engineering at Univers
 
 My broader research interest centers on understanding how group characteristics—such as efficiency, cooperation, and equality—depend on a system comprising three factors: individual capabilities, social structure, and the physical environment in which interaction takes place. My research combines behavioral experiments—both controlled laboratory studies and large-scale experiments—with the design of computational models that facilitate the analysis of group decision-making. I have collaborated with Prof. Robert Goldstone’s Percepts and Concepts Laboratory (Indiana University), Prof. Seth Frey’s Computational Communication Research Lab (University of California, Davis), and Prof. Nori Jacoby’s Cornell Computational Cognition Lab (Cornell University).
 
-Additionally, I develop applications of artificial intelligence in education and automated reasoning. In automated reasoning, I work on translating normative and regulatory language into executable logical representations using semantic parsing and reinforcement learning techniques. In the field of education, I develop intelligent tutoring systems in collaboration with the CEAP at Universidad del Rosario, integrating language models in theory-guided teaching practices. 
-
-
 
 * [Research](/pages/research.md)
 
