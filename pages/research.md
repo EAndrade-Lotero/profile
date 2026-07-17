@@ -6,22 +6,42 @@ permalink: /research/
 
 # Research interests
 
-My broader research interest centers on understanding how group characteristics—such as efficiency, cooperation, and equity—depend on a system comprising three factors: individual capabilities, social structure, and the physical environment in which interaction takes place.
-
 My research projects can be summarized in the following topics:
 
-- Group cognition and cooperation
-- Logic and Semantics
+- [Group cognition and cooperation](#group-cognition-and-cooperation)
+- [Logic and Semantics](#logic-and-semantics)
 
 
 ### Group cognition and cooperation
 
-I want to deepen my understanding on how group characteristics—such as coordination, efficiency, and fairness—depend on a system comprising three factors: individual capabilities, social structure, and the environment in which interaction takes place.
+We investigate how cognitive, structural, and environmental factors drive coordination, efficiency, and fairness. 
 
-**Cooperation and focal attractors**
+**Cooperation and focal points**
 
+One of our core findings demonstrates that 'focal points'—psychologically salient solution scenarios—are instrumental in achieving coordination during iterated tasks.
 
-**Division of linguistic labor**
+The central idea is this: When faced with a coordination problem, humans mentally simulate a few potential scenarios. They then assess how well their current reality matches these imagined scenarios and adjust their behavior to align with the most accurate prediction.
+
+To illustrate the point, consider [the following task](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254532): A pair of players must find whether there is or not a unicorn hidden beneath one of the tiles in a grid.
+
+<img src="../assets/images/research/unicorn.png"
+     alt="Seek the unicorn task"
+     width="500">
+
+Each player privately knows what they find under the tiles. The public knowledge is which tiles both players have searched in common and what the other player has guessed. Overlapping searches penalize the players' score.
+
+Examining the frequency each tile was uncovered, we found that players split the grid using some natural divisions.
+
+<img src="../assets/images/research/focal_regions.png"
+     alt="Focal regions"
+     width="500">
+
+These regions drove players' decisions in an interesting way: they worked as behavioral attractors and the complementary regions acted as repellers. A player was more likely to uncover a region the more it resembled a focal region. And the more their inefficient overlap resembled a focal region, the more the player was attracted to the complementary region. Here is an illustration of this mechanism:
+
+<img src="../assets/images/research/FRA.gif"
+     alt="Focal region attractors"
+     width="500">
+
 
 
 **Cultural evolution of power**
@@ -47,6 +67,13 @@ Using an iterated-learning design, we will examine which arrangements tend to pe
      width="500">
 
 This approach allows us to ask: if decision power rests with the coordinator (the higher-ranking role), do groups gravitate toward tighter hierarchical control? If a forager holds that power, do groups move toward more egalitarian structures? And what organizational form emerges when the system is optimized for well-being?
+
+
+**Institutional context of fairness behaviors**
+
+
+**Division of linguistic labor**
+
 
 
 ### Logic and Semantics
