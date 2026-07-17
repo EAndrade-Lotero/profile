@@ -42,6 +42,20 @@ These regions drove players' decisions in an interesting way: they worked as beh
      alt="Focal region attractors"
      width="500">
 
+We fit a computational cognitive model incorporating these mechanisms to the data. The model outperformed several alternative accounts and qualitatively reproduced the behavioral patterns observed in the experiment. See details in [this paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254532).
+
+We observed a similar use of focal regions in a different coordination task: the El Farol Bar Problem. In this paradigm, a town of 100 people has a bar that everyone would like to visit every Thursday. If no more than 60 people attend, everyone enjoys the evening. If attendance exceeds 60, the bar becomes overcrowded, and those who went would have preferred to stay home.
+
+<img src="../assets/images/research/el_farol.png"
+     alt="El Farol bar problem"
+     width="500">
+
+The El Farol Bar Problem combines two coordination challenges: resolving a social dilemma and selecting among multiple equilibria. It captures the tension between individual and collective interests. Each person prefers to attend the bar, but when too many do so, everyone's payoff declines. Moreover, avoiding overcrowding does not guarantee fairness. Attendance patterns such as the segmented and mixed solutions shown in the left column of the figure achieve efficient use of the bar while producing unequal payoffs across individuals. By contrast, the two alternation patterns in the right column achieve the same level of efficiency while distributing attendance opportunities equally over time.
+
+<img src="../assets/images/research/types_of_coordination.png"
+     alt="Types of coordination"
+     width="500">
+
 
 
 **Cultural evolution of power**
