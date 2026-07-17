@@ -16,7 +16,7 @@ My research projects can be summarized in the following topics:
 
 ### Group cognition and cooperation
 
-
+I want to deepen my understanding on how group characteristics—such as coordination, efficiency, and fairness—depend on a system comprising three factors: individual capabilities, social structure, and the environment in which interaction takes place.
 
 **Cooperation and focal attractors**
 
