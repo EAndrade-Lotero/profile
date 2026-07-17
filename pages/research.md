@@ -10,13 +10,18 @@ My broader research interest centers on understanding how group characteristicsâ
 
 My research projects can be summarized in the following topics:
 
-- Cognitive Science and Group cognition
-- Artificial Intelligence
-- Formal Semantics and Philosophy of Language
+- Group cognition and cooperation
 - Logic and Semantics
 
 
-### Cognitive Science and Group cognition
+### Group cognition and cooperation
+
+
+
+**Cooperation and focal attractors**
+
+
+**Division of linguistic labor**
 
 
 **Cultural evolution of power**
@@ -44,30 +49,12 @@ Using an iterated-learning design, we will examine which arrangements tend to pe
 This approach allows us to ask: if decision power rests with the coordinator (the higher-ranking role), do groups gravitate toward tighter hierarchical control? If a forager holds that power, do groups move toward more egalitarian structures? And what organizational form emerges when the system is optimized for well-being?
 
 
-**Papers in the topic of group cognition**
-
-- The emergence of role specialization
-- Self-organization of division of cognitive labor
-- The division of linguistic labor as an off-loading cognitive strategy
-- bibtex file
-
-
-### Semantic Parsing
-
-- Leveraging...
-
-### Formal Semantics and Philosophy of Language
+### Logic and Semantics
 
 - A misconception of logic
 - Models of language
 - DRT and ...
-
-### Logic and Semantics
-
-- df
-- fdf
-- df
-- df
+- Leveraging...
 
 
 [Back to my profile](/profile/)
