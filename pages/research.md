@@ -20,7 +20,7 @@ We investigate how cognitive, structural, and environmental factors drive coordi
 
 One of our core findings demonstrates that 'focal points'—psychologically salient solution scenarios—are instrumental in achieving coordination during iterated tasks.
 
-The central idea is this: When faced with a coordination problem, humans mentally simulate a few potential scenarios. They then assess how well their current reality matches these imagined scenarios and adjust their behavior to align with the most accurate prediction.
+The central idea is this: When faced with a coordination problem, humans mentally simulate a few potential scenarios. They then assess how well their current reality matches these imagined scenarios and adjust their behavior to align with the most accurate prediction (see [this paper](https://onlinelibrary.wiley.com/doi/full/10.1111/tops.12644) for a more overarching approach).
 
 To illustrate the point, consider [the following task](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254532): A pair of players must find whether there is or not a unicorn hidden beneath one of the tiles in a grid.
 
@@ -46,16 +46,19 @@ We fit a computational cognitive model incorporating these mechanisms to the dat
 
 We observed a similar use of focal regions in a different coordination task: the El Farol Bar Problem. In this paradigm, a town of 100 people has a bar that everyone would like to visit every Thursday. If no more than 60 people attend, everyone enjoys the evening. If attendance exceeds 60, the bar becomes overcrowded, and those who went would have preferred to stay home.
 
-<img src="../assets/images/research/el_farol.png"
-     alt="El Farol bar problem"
-     width="500">
-
-The El Farol Bar Problem captures the tension between individual and collective interests. Each person prefers to attend the bar, but when too many do so, everyone's payoff declines. Moreover, avoiding overcrowding does not guarantee fairness. Attendance patterns such as the segmented and mixed solutions shown in the left column of the figure achieve efficient use of the bar while producing unequal payoffs across individuals. By contrast, the two alternation patterns in the right column achieve the same level of efficiency while distributing attendance opportunities equally over time.
+The El Farol Bar Problem captures the tension between individual and collective interests. Each person prefers to attend the bar, but when too many do so, everyone's payoff declines. Moreover, avoiding overcrowding does not guarantee fairness. Attendance patterns such as the segmented and mixed solutions shown in the left column of the figure below achieve efficient use of the bar while producing unequal payoffs across individuals. By contrast, the two alternation patterns in the right column achieve the same level of efficiency while distributing attendance opportunities equally over time.
 
 <img src="../assets/images/research/types_of_coordination.png"
      alt="Types of coordination"
      width="500">
 
+We found that people maintain a small repertoire of intuitive behavioral patterns, then track which focal pattern best reflects the group's recent history and coordinate their actions based on the predictions of this best-fitting schema. An illustration of this mechanism is illustrated in the following Figure:
+
+<img src="../assets/images/research/focal_schemata_selection.png"
+     alt="Focal schemata"
+     width="500">
+
+Our proposed computational cognitive model builds directly upon this pattern-prediction intuition. It also includes two lower-level mechanisms, which reward payoff and attendance. This model fits the experimental data better than other models based on reinforcement learning, bounded rationality, an fictitious play.
 
 
 **Cultural evolution of power**
