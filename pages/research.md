@@ -4,6 +4,9 @@ title: Research
 permalink: /research/
 ---
 
+
+### [Link to my CogSci2026 paper from the poster presentation](/assets/pdfs/Cultural_evolution_of_power_dynamics_between_workers_and_managers.pdf)
+
 # Research interests
 
 My research projects can be summarized in the following topics:
@@ -63,28 +66,33 @@ Our proposed computational cognitive model builds directly upon this pattern-pre
 
 **Cultural evolution of power**
 
-In this project, we study the dynamics of small groups organized into hierarchical roles. Our goal is to understand how different distributions of power shape the group’s social contract, and how these choices affect outcomes such as efficiency, fairness, and well-being. By identifying general relationships between role structure, power, and performance, we aim to contribute to research on online governance and collective intelligence.
+In [this project](/assets/pdfs/Cultural_evolution_of_power_dynamics_between_workers_and_managers.pdf), we explore the preferences of power roles. Imagine a situation in which your interests are not algined with those of other people. If you had control over the conditions of the interaction, would you act on self-interest or would you favor a more prosocial configuration? To make these questions concrete, we are developing a large-scale online experiment in which foragers collect resources from the environment. 
 
-To make these questions concrete, we are running a large-scale online experiment in which foragers collect resources from the environment. Group performance depends in part on a coordinator, who invests in information about resource locations and assigns foragers to initial positions.
-
-<img src="../assets/images/research/coordinator_and_forager_experiment.png"
+<img src="../assets/images/research/exp1.jpeg"
      alt="Coordinator and Foragers experiment"
      width="500">
 
-We represent the social contract along three dimensions that jointly determine how resources are distributed and how much autonomy foragers retain. This framework lets us locate and compare characteristic organizational arrangements within a single space.
+The size of the harvest is highly dependent on the inital locations of foragers so we introduce a manager, who invests in information to better coordinate effort and who collects their reward by taxing the foragers harvest.
 
-<img src="../assets/images/research/social_contracts_space.png"
-     alt="Space of Social contracts"
+<img src="../assets/images/research/interaction.png"
+     alt="Coordinator and Foragers experiment"
      width="500">
 
-Using an iterated-learning design, we will examine which arrangements tend to persist and converge when different roles are given the authority to modify the social contract.
+Now, do foragers prefer a small tax rate? What rate would managers prefere?
 
-<img src="../assets/images/research/distributions_of_organization_type.png"
-     alt="Distribution of arrangements"
+We treat these preferences as inductive biases, which we study using the technique of cultural transmision. One generation of manager and foragers use a given tax rate and, at the end of the interaction, either the manager or the foragers (we take their average) propose a new tax rate, which will be the given tax for a new generation. In turn, this generation will propose a new tax and so on.
+
+<img src="../assets/images/research/evolution_power.png"
+     alt="Coordinator and Foragers experiment"
      width="500">
 
-This approach allows us to ask: if decision power rests with the coordinator (the higher-ranking role), do groups gravitate toward tighter hierarchical control? If a forager holds that power, do groups move toward more egalitarian structures? And what organizational form emerges when the system is optimized for well-being?
+We found that participants maintained high effort regardless of the tax rate. Although tax proposals reflected role-specific self-interest, managers and workers converged on moderate rather than extreme tax rates. 
 
+<img src="../assets/images/research/proposed_vs_starting_by_power_role-1.png"
+     alt="Coordinator and Foragers experiment"
+     width="500">
+
+Simulations further showed that Reinforcement Learning or Gibbs Sampling with people can improve collective performance while reducing inequality, motivating future experiments with human–AI institutional design.
 
 **Institutional context of fairness behaviors**
 
