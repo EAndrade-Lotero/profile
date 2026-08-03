@@ -1,54 +1,36 @@
 ---
 layout: page
-title: Semillero en Representación del Conocimiento
+title: Research Seedbed
 permalink: /seedbed/
 ---
 
-# Semillero: Representación del Conocimiento
+A student–faculty research group at Universidad del Rosario focused on knowledge representation, natural language processing, and applied AI.
 
-Somos un equipo conformado por estudiantes y profesores interesados en el estudio de diferentes técnicas de representación del conocimiento y la creación de herramientas para análisis de información en lenguaje natural.
+**Director:** Edgar Andrade  
+**Affiliation:** TICMA Research Group, Universidad del Rosario  
+**Established:** 2022  
+**Type:** Applied AI (implementation-driven)
 
-Nos enfocamos en la implementación de algoritmos y herramientas de IA que respalden investigación aplicada en representación del conocimiento y PLN.
+### Focus areas
 
-## Ficha técnica
-- **Director:** Edgar Andrade  
-- **Tipo de semillero:** Maker (Implementación práctica de IA)
-- **Afiliación:** Grupo TICMA, Universidad del Rosario
-- **Fecha de creación:** 2022
+- Semantic representation
+- Neural networks and reinforcement learning
+- Classical AI methods
+- Natural language processing
+- Reasoning and question answering
 
-## Líneas de investigación
+### Current goals
 
-- Representaciones semánticas  
-- Redes neuronales & Aprendizaje por refuerzo  
-- Técnicas clásicas de IA  
-- Procesamiento del lenguaje natural  
-- Razonamiento & QA
+- Study Monte Carlo Tree Search (MCTS) with deep reinforcement learning, following the AlphaGo / AlphaZero approach.
+- Build game-playing engines for two-player competitive games, with emphasis on chess endgames.
+- Advance a deep semantic parsing tool that maps text to logical form.
 
-## Objetivos 2025-II
+### Resources
 
-- Estudiar en detalle la técnica de Monte Carlo Tree Search (MCTS) combinado con Deep Reinforcement Learning (DeepRL), técnicas que impulsaron AlphaGo, el primer sistema en vencer al campeón reinante de Go y su versión más general, AlphaZero.
-- Aplicar AlphaZero para crear motores que resuelvan juegos competitivos de dos jugadores; en particular, abordar finales de ajedrez.
-- Perfeccionar un Deep Semantic Parsing en desarrollo: una herramienta que toma un texto y produce su representación lógica de manera automática.
+Code: [ChessFinalistMCTS](https://github.com/EAndrade-Lotero/ChessFinalistMCTS)
 
-## Repositorio oficial
+Suggested background (not required): programming, probability and statistics, theory of computation, and problem representation.
 
-El código que estamos usando puede consultarse en [este repositorio](https://github.com/EAndrade-Lotero/ChessFinalistMCTS).
+### Join us
 
-### Requisitos sugeridos (mas no obligatorios)
-
-- Programación de computadores  
-- Probabilidad y Estadística I  
-- Teoría de la Computación
-- Representación y solución de problemas
-
----
-
-## ¿Te interesa participar?
-
-Envíanos un correo indicando tu semestre, intereses y experiencia técnica.
-
-**Contacto**
-Director: Edgar Andrade
-Correo: [edgar.andrade@urosario.edu.co](mailto:edgar.andrade@urosario.edu.co)
-
-[Back to my profile](/profile/)
+Email [edgar.andrade@urosario.edu.co](mailto:edgar.andrade@urosario.edu.co) with your semester, interests, and technical background.
