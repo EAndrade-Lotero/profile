@@ -1,14 +1,22 @@
-# Edgar Andrade-Lotero
+# Edgar Andrade-Lotero — personal site
 
-I am an Associate Professor at the School of Sciences and Engineering at Universidad del Rosario (Bogotá, Colombia) and a Postdoctoral Researcher in the Department of Communication at the University of California, Davis. 
+Material theme based on [MatJek](https://github.com/ShawnTeoh/matjek) (Materialize.css).
 
-My broader research interest centers on understanding how group characteristics—such as coordination, efficiency, and fairness—depend on a system comprising three factors: individual capabilities, social structure, and the environment in which interaction takes place. My research combines behavioral experiments—both controlled laboratory studies and large-scale experiments—with the design of computational models that facilitate the analysis of group decision-making. I have collaborated with Prof. Robert Goldstone’s Percepts and Concepts Laboratory (Indiana University), Prof. Seth Frey’s Computational Communication Research Lab (University of California, Davis), and Prof. Nori Jacoby’s Cornell Computational Cognition Lab (Cornell University).
+Site: https://eandrade-lotero.github.io/profile/
 
+## Local preview
 
-* [CV](/assets/pdfs/cv-llt.pdf)
+```bash
+bundle install
+bundle exec jekyll serve
+```
 
-* [Research](/pages/research.md)
+Then open http://localhost:4000/profile/
 
-* Teaching
+## Customize
 
-* Research seedbed
+- Site title, user name, GitHub URL: `_config.yml`
+- Sidebar photo: replace `assets/res/user.png`
+- Logo: replace `assets/res/logo.png`
+- Nav links: `_includes/header.html`
+- Home bio: `_includes/about.html`

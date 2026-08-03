@@ -1,16 +1,10 @@
 /* Sticky scrollytelling (inspired by VCSI / The Pudding sticky pattern) */
 
-/* Avoid ancestor overflow clipping sticky panels (slate theme wrappers) */
-#main_content_wrap,
-#main_content {
+/* Avoid ancestor overflow clipping sticky panels */
+main,
+.container,
+main .row {
   overflow: visible;
-}
-
-/* White page chrome (overrides slate grey #f2f2f2) */
-body,
-#main_content_wrap,
-#main_content {
-  background: #fff;
 }
 
 .scrolly {
@@ -44,6 +38,7 @@ body,
   padding: 1rem 0.25rem;
   z-index: 0;
   pointer-events: none;
+  background: #fff;
 }
 
 .scrolly-figure {
@@ -54,6 +49,7 @@ body,
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #fff;
 }
 
 .scrolly-figure img {
@@ -83,12 +79,13 @@ body,
   padding: 30vh 0 45vh;
   pointer-events: none;
   box-sizing: border-box;
+  background: #fff;
 }
 
 .scrolly-step {
   margin: 0 0 55vh;
   padding: 0.85rem 1rem;
-  background: rgba(255, 255, 255, 0.94);
+  background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   color: #222;
