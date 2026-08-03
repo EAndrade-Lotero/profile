@@ -1,0 +1,8 @@
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - COPYING-matjek
+  - projects.md
+  - pages/cogitations.md

@@ -8,34 +8,36 @@ main .row {
 }
 
 .scrolly {
+  --scrolly-image-height: min(58vh, 420px);
+  --scrolly-step-gap: min(42vh, 310px);
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
   align-items: start;
-  gap: 1rem;
+  gap: 2rem;
   box-sizing: border-box;
-  margin: 2.5rem 0 3rem;
-  width: 100%;
-  max-width: min(1100px, 100%);
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 0.75rem;
+  margin: 0 0 3rem;
+  width: calc(100vw - 300px);
+  max-width: none;
+  margin-left: calc(50% - 50vw + 150px);
+  margin-right: 0;
+  padding: 0 clamp(1rem, 3vw, 3rem);
   background: #fff;
   overflow-x: clip;
 }
 
 .scrolly-sticky {
   position: sticky;
-  top: 0;
+  top: calc((100vh - var(--scrolly-image-height)) / 2);
   grid-column: 1;
   grid-row: 1;
-  height: 100vh;
-  height: 100dvh;
+  height: var(--scrolly-image-height);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   min-width: 0;
-  padding: 1rem 0.25rem;
+  padding: 0 0.25rem;
+  box-sizing: border-box;
   z-index: 0;
   pointer-events: none;
   background: #fff;
@@ -44,8 +46,8 @@ main .row {
 .scrolly-figure {
   position: relative;
   width: 100%;
-  max-width: 520px;
-  height: min(58vh, 420px);
+  max-width: none;
+  height: var(--scrolly-image-height);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,17 +75,17 @@ main .row {
   grid-row: 1;
   z-index: 1;
   width: 100%;
-  max-width: 320px;
+  max-width: none;
   min-width: 0;
   margin: 0;
-  padding: 30vh 0 45vh;
+  padding: 0 0 8vh;
   pointer-events: none;
   box-sizing: border-box;
   background: #fff;
 }
 
 .scrolly-step {
-  margin: 0 0 55vh;
+  margin: 0 0 var(--scrolly-step-gap);
   padding: 0.85rem 1rem;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -123,6 +125,8 @@ main .row {
 /* Narrow screens: keep image left / text right, but tighter */
 @media (max-width: 700px) {
   .scrolly {
+    --scrolly-image-height: min(50vh, 300px);
+    --scrolly-step-gap: min(36vh, 220px);
     grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
     gap: 0.5rem;
     padding: 0 0.5rem;
@@ -130,17 +134,24 @@ main .row {
 
   .scrolly-figure {
     max-width: 100%;
-    height: min(50vh, 300px);
   }
 
   .scrolly-steps {
     max-width: 100%;
-    padding: 28vh 0 40vh;
+    padding: 0 0 8vh;
   }
 
   .scrolly-step {
     padding: 0.7rem 0.8rem;
     font-size: 0.88rem;
+  }
+}
+
+/* MatJek hides its sidebar below 992px, so use the full viewport. */
+@media (max-width: 992px) {
+  .scrolly {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
   }
 }
 
