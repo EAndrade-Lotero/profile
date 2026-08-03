@@ -103,30 +103,6 @@
   color: #0366d6;
 }
 
-/* Desktop: sticky visual left, scrolling steps right */
-@media (min-width: 900px) {
-  .scrolly {
-    grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
-    align-items: start;
-    background: #F4F5E7;
-    padding: 0 clamp(1rem, 4vw, 3rem);
-  }
-
-  .scrolly-sticky {
-    grid-column: 1;
-    grid-row: 1;
-    padding: 1rem 1.5rem 1rem 0;
-  }
-
-  .scrolly-steps {
-    grid-column: 2;
-    grid-row: 1;
-    width: 100%;
-    margin: 0;
-    padding: 30vh 0 45vh;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .scrolly-figure img,
   .scrolly-step {
