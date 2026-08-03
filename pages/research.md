@@ -24,6 +24,8 @@ One of our core findings demonstrates that 'focal points'—psychologically sali
 
 The central idea is this: When faced with a coordination problem, humans mentally simulate a few potential scenarios. They then assess how well their current reality matches these imagined scenarios and adjust their behavior to align with the most accurate prediction (see [this paper](https://onlinelibrary.wiley.com/doi/full/10.1111/tops.12644) for a more overarching approach).
 
+To illustrate the point, consider <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254532">the following task</a>: 
+
 <section class="scrolly" aria-label="Seek the unicorn">
   <div class="scrolly-sticky">
     <div class="scrolly-figure">
@@ -34,7 +36,7 @@ The central idea is this: When faced with a coordination problem, humans mentall
   </div>
   <div class="scrolly-steps">
     <div class="scrolly-step is-active" data-step="0">
-      <p>To illustrate the point, consider <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254532">the following task</a>: A pair of players must find whether there is or not a unicorn hidden beneath one of the tiles in a grid.</p>
+      <p>A pair of players must find whether there is or not a unicorn hidden beneath one of the tiles in a grid.</p>
       <p>Each player privately knows what they find under the tiles. The public knowledge is which tiles both players have searched in common and what the other player has guessed. Overlapping searches penalize the players' score.</p>
     </div>
     <div class="scrolly-step" data-step="1">
