@@ -1,0 +1,135 @@
+/* Sticky scrollytelling (inspired by VCSI / The Pudding sticky pattern) */
+
+/* Avoid ancestor overflow clipping sticky panels (slate theme wrappers) */
+#main_content_wrap,
+#main_content {
+  overflow: visible;
+}
+
+.scrolly {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2.5rem 0 3rem;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background: #f0f0f0;
+}
+
+.scrolly-sticky {
+  position: sticky;
+  top: 0;
+  grid-column: 1;
+  grid-row: 1;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.scrolly-figure {
+  position: relative;
+  width: min(920px, 100%);
+  height: min(70vh, 560px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrolly-figure img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.scrolly-figure img.is-active {
+  opacity: 1;
+}
+
+.scrolly-steps {
+  position: relative;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+  width: min(420px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 45vh 0 55vh;
+  pointer-events: none;
+}
+
+.scrolly-step {
+  margin: 0 0 55vh;
+  padding: 1rem 1.15rem;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.55;
+  opacity: 0.4;
+  transition: opacity 0.25s ease, border-color 0.25s ease;
+  pointer-events: auto;
+}
+
+.scrolly-step:last-child {
+  margin-bottom: 0;
+}
+
+.scrolly-step.is-active {
+  opacity: 1;
+  border-color: rgba(0, 0, 0, 0.18);
+}
+
+.scrolly-step p {
+  margin: 0;
+}
+
+.scrolly-step p + p {
+  margin-top: 0.75rem;
+}
+
+.scrolly-step a {
+  color: #0366d6;
+}
+
+/* Desktop: sticky visual left, scrolling steps right */
+@media (min-width: 900px) {
+  .scrolly {
+    grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+    align-items: start;
+    background: transparent;
+    padding: 0 clamp(1rem, 4vw, 3rem);
+  }
+
+  .scrolly-sticky {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 1rem 1.5rem 1rem 0;
+  }
+
+  .scrolly-steps {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    margin: 0;
+    padding: 30vh 0 45vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scrolly-figure img,
+  .scrolly-step {
+    transition: none;
+  }
+}
