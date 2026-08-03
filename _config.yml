@@ -1,8 +1,32 @@
-Title: Edgar Andrade-Lotero
-description: Profesional webpage
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-slate
-url: "https://eandrade-lotero.github.io/profile/"
+# Site settings
+title: Edgar Andrade-Lotero
+description: >-
+  Associate Professor at Universidad del Rosario and Postdoctoral Researcher at UC Davis.
+  Research on group cognition, coordination, and fairness.
+url: "https://eandrade-lotero.github.io"
+baseurl: "/profile"
+repository: eandrade-lotero/profile
+permalink: /:year/:month/:day/:title
+paginate: 5
+
+# MatJek specific configurations
+github_profile: "https://github.com/eandrade-lotero"
+user: "Edgar Andrade-Lotero"
+user_email: ""
+# contact_url: "https://forms.gle/your-form"  # optional Google Form or similar
+
+# Build settings
+markdown: kramdown
 plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+sass:
+  style: compressed
+future: true

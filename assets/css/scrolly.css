@@ -1,16 +1,10 @@
 /* Sticky scrollytelling (inspired by VCSI / The Pudding sticky pattern) */
 
-/* Avoid ancestor overflow clipping sticky panels (slate theme wrappers) */
-#main_content_wrap,
-#main_content {
+/* Avoid ancestor overflow clipping sticky panels */
+main,
+.container,
+main .row {
   overflow: visible;
-}
-
-/* White page chrome (overrides slate grey #f2f2f2) */
-body,
-#main_content_wrap,
-#main_content {
-  background: #fff;
 }
 
 .scrolly {

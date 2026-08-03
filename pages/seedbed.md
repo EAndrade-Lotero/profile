@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Semillero en Representación del Conocimiento
 permalink: /seedbed/
 ---
