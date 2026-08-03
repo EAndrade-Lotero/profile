@@ -1,5 +1,9 @@
 ---
 ---
+$primary: #3631DB
+$primary-dark: #24209F
+$primary-light: #6B67EF
+
 // Overall
 body
   display: flex
@@ -7,7 +11,7 @@ body
   flex-direction: column
 
 a
-  color: #bdbdbd
+  color: $primary
 
 a:hover
   text-decoration: underline
@@ -34,8 +38,8 @@ header
     text-decoration: none
 
   .background
-    background: -webkit-linear-gradient(90deg, #3AA17E 10%, #00537E 90%)
-    background: linear-gradient(90deg, #3AA17E 10%, #00537E 90%)
+    background: -webkit-linear-gradient(90deg, $primary-dark 10%, $primary 90%)
+    background: linear-gradient(90deg, $primary-dark 10%, $primary 90%)
 
 a
   &.button-collapse
@@ -61,6 +65,18 @@ nav
   &.top-nav
     height: 80px
 
+.site-primary
+  background-color: $primary !important
+
+.site-primary .footer-copyright
+  background-color: $primary-dark
+
+.side-nav li > a:hover
+  background-color: rgba($primary-light, .12)
+
+.side-nav li > a i.material-icons
+  color: $primary-dark
+
 // Footer
 footer.page-footer
   margin-top: 10px
@@ -73,7 +89,7 @@ footer.page-footer
 
 // Misc
 blockquote
-  border-left-color: teal
+  border-left-color: $primary
 
 main
   ul
