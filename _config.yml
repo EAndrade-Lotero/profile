@@ -28,6 +28,7 @@ exclude:
   - README.md
   - vendor
   - pages/cogitations.md
+  - pages/seedbed.md
 sass:
   style: compressed
 future: true
