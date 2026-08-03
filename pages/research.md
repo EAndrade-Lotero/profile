@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: default
 title: Research
 permalink: /research/
-css: ["scrolly.css"]
-js: ["scrolly.js"]
 ---
+
+<link rel="stylesheet" href="../assets/css/scrolly.css">
 
 # Research interests
 
@@ -29,9 +29,9 @@ To illustrate the point, consider <a href="https://journals.plos.org/plosone/art
 <section class="scrolly" aria-label="Seek the unicorn">
   <div class="scrolly-sticky">
     <div class="scrolly-figure">
-      <img data-step="0" class="is-active" src="{{ site.baseurl }}/assets/images/research/unicorn.png" alt="Seek the unicorn task">
-      <img data-step="1" src="{{ site.baseurl }}/assets/images/research/focal_regions.png" alt="Focal regions">
-      <img data-step="2" src="{{ site.baseurl }}/assets/images/research/FRA.gif" alt="Focal region attractors">
+      <img data-step="0" class="is-active" src="../assets/images/research/unicorn.png" alt="Seek the unicorn task">
+      <img data-step="1" src="../assets/images/research/focal_regions.png" alt="Focal regions">
+      <img data-step="2" src="../assets/images/research/FRA.gif" alt="Focal region attractors">
     </div>
   </div>
   <div class="scrolly-steps">
@@ -57,8 +57,8 @@ The El Farol Bar Problem captures the tension between individual and collective 
 <section class="scrolly" aria-label="El Farol coordination">
   <div class="scrolly-sticky">
     <div class="scrolly-figure">
-      <img data-step="0" class="is-active" src="{{ site.baseurl }}/assets/images/research/types_of_coordination.png" alt="Types of coordination">
-      <img data-step="1" src="{{ site.baseurl }}/assets/images/research/focal_schemata_selection.png" alt="Focal schemata selection">
+      <img data-step="0" class="is-active" src="../assets/images/research/types_of_coordination.png" alt="Types of coordination">
+      <img data-step="1" src="../assets/images/research/focal_schemata_selection.png" alt="Focal schemata selection">
     </div>
   </div>
   <div class="scrolly-steps">
@@ -81,10 +81,10 @@ In [this project](../assets/pdfs/Cultural_evolution_of_power_dynamics_between_wo
 <section class="scrolly" aria-label="Cultural evolution of power">
   <div class="scrolly-sticky">
     <div class="scrolly-figure">
-      <img data-step="0" class="is-active" src="{{ site.baseurl }}/assets/images/research/exp1.jpeg" alt="Foragers collecting resources">
-      <img data-step="1" src="{{ site.baseurl }}/assets/images/research/interaction.png" alt="Manager and foragers interaction">
-      <img data-step="2" src="{{ site.baseurl }}/assets/images/research/evolution_power.png" alt="Cultural transmission of tax rates">
-      <img data-step="3" src="{{ site.baseurl }}/assets/images/research/proposed_vs_starting_by_power_role-1.png" alt="Proposed versus starting tax by power role">
+      <img data-step="0" class="is-active" src="../assets/images/research/exp1.jpeg" alt="Foragers collecting resources">
+      <img data-step="1" src="../assets/images/research/interaction.png" alt="Manager and foragers interaction">
+      <img data-step="2" src="../assets/images/research/evolution_power.png" alt="Cultural transmission of tax rates">
+      <img data-step="3" src="../assets/images/research/proposed_vs_starting_by_power_role-1.png" alt="Proposed versus starting tax by power role">
     </div>
   </div>
   <div class="scrolly-steps">
@@ -119,3 +119,8 @@ Simulations further showed that Reinforcement Learning or Gibbs Sampling with pe
 - Models of language
 - DRT and ...
 - Leveraging...
+
+
+[Back to my profile](/profile/)
+
+<script src="../assets/js/scrolly.js"></script>

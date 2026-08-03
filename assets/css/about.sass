@@ -8,9 +8,21 @@
   transition: $args
 
 .user-pic
-  img
-    width: 100px
-    height: auto
+  margin: 1.5rem 0 2rem
+
+  .photo-frame
+    display: inline-block
+    width: min(420px, 90%)
+    padding: 8px
+    border-radius: 8px
+    background: #fff
+    line-height: 0
+
+    img
+      display: block
+      width: 100%
+      height: auto
+      border-radius: 4px
 
 .hidden
   display: none

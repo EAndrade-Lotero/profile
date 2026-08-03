@@ -27,6 +27,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor
+  - pages/cogitations.md
 sass:
   style: compressed
 future: true
