@@ -15,7 +15,7 @@
   max-width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  background: #f0f0f0;
+  background: #F4F5E7;
 }
 
 .scrolly-sticky {
@@ -108,7 +108,7 @@
   .scrolly {
     grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
     align-items: start;
-    background: transparent;
+    background: #F4F5E7;
     padding: 0 clamp(1rem, 4vw, 3rem);
   }
 
