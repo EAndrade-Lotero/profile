@@ -6,7 +6,7 @@ permalink: /research/
 
 <link rel="stylesheet" href="../assets/css/scrolly.css">
 
-# Research interests
+## Research interests
 
 My research projects can be summarized in the following topics:
 
