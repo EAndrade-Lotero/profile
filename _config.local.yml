@@ -4,6 +4,5 @@ exclude:
   - README.md
   - vendor
   - COPYING-matjek
-  - projects.md
   - pages/cogitations.md
   - pages/seedbed.md
