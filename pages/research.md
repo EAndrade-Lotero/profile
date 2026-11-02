@@ -8,6 +8,8 @@ permalink: /research/
 
 ## Research interests
 
+My research investigates how cognitive mechanisms, social interaction, and power relations shape collective intelligence. I study how groups develop complementary roles and how those roles distribute knowledge and control. My experiments and computational models show that people coordinate by selecting psychologically plausible representations that match the history of their interaction and organize complementary behavior. My current work extends this account to the distribution of power across roles. 
+
 My research projects can be summarized in the following topics:
 
 - [Group cognition and cooperation](#group-cognition-and-cooperation)
@@ -16,39 +18,9 @@ My research projects can be summarized in the following topics:
 
 ### Group cognition and cooperation
 
-We investigate how cognitive, structural, and environmental factors drive coordination, efficiency, and fairness.
+In research with Robert Goldstone, I have developed two computational models of how representations organize coordination. *Focal Regions as Attractors* assumes that people consider a limited set of natural partitions of a search space and select among them by comparing each partition with the shared history of their actions. In our *Seeking the Unicorn* experiment, the model outperformed alternative accounts and reproduced the main behavioral patterns of human pairs. *Iterative Cognitive Schema Matching* extends this mechanism to groups facing open-ended coordination problems. In the El Farol Bar Problem, groups converged on qualitatively different but equally successful solutions, a result first reported at Collective Intelligence. In collaboration with Seth Frey, we wrote a manuscript currently under review. We show that a hybrid of schema matching and two reinforcement-learning mechanisms provided the best account of these group dynamics; complementary formal work identifies a paradox in Arthur's original solution. My work on linguistic labor further shows that roles distribute knowledge as well as action: pairs acquired complementary expertise, aligned their use of queries to one another, and performed better when they made greater use of their partner's knowledge.
 
-**Cooperation and focal points**
-
-One of our core findings demonstrates that 'focal points'—psychologically salient solution scenarios—are instrumental in achieving coordination during repeated tasks.
-
-The central idea is this: When faced with a coordination problem, humans mentally simulate a few potential scenarios. They then assess how well their current reality matches these imagined scenarios and adjust their behavior to align with the most accurate prediction (see [this paper](https://onlinelibrary.wiley.com/doi/full/10.1111/tops.12644) for a more overarching approach).
-
-To illustrate the point, consider <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254532">the following task</a>: 
-
-<section class="scrolly" aria-label="Seek the unicorn">
-  <div class="scrolly-sticky">
-    <div class="scrolly-figure">
-      <img data-step="0" class="is-active" src="../assets/images/research/unicorn.png" alt="Seek the unicorn task">
-      <img data-step="1" src="../assets/images/research/focal_regions.png" alt="Focal regions">
-      <img data-step="2" src="../assets/images/research/FRA.gif" alt="Focal region attractors">
-    </div>
-  </div>
-  <div class="scrolly-steps">
-    <div class="scrolly-step is-active" data-step="0">
-      <p>A pair of players must find whether there is or not a unicorn hidden beneath one of the tiles in a grid.</p>
-      <p>Each player privately knows what they find under the tiles. The public knowledge is which tiles both players have searched in common and what the other player has guessed. Overlapping searches penalize the players' score.</p>
-    </div>
-    <div class="scrolly-step" data-step="1">
-      <p>Examining the frequency each tile was uncovered, we found that players split the grid using some natural divisions.</p>
-    </div>
-    <div class="scrolly-step" data-step="2">
-      <p>These regions drove players' decisions in an interesting way: they worked as behavioral attractors and the complementary regions acted as repellers. A player was more likely to uncover a region the more it resembled a focal region. And the more their inefficient overlap resembled a focal region, the more the player was attracted to the complementary region.</p>
-    </div>
-  </div>
-</section>
-
-We fit a computational cognitive model incorporating these mechanisms to the data. The model outperformed several alternative accounts and qualitatively reproduced the behavioral patterns observed in the experiment. See details in [this paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254532).
+**[Cooperation and focal points](../research/cooperation-and-focal-points/)**
 
 We observed a similar use of focal regions in a different coordination task: the El Farol Bar Problem. In this paradigm, a town of 100 people has a bar that everyone would like to visit every Thursday. If no more than 60 people attend, everyone enjoys the evening. If attendance exceeds 60, the bar becomes overcrowded, and those who went would have preferred to stay home.
 
