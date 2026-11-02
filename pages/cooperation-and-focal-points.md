@@ -4,7 +4,7 @@ title: Cooperation and focal points
 permalink: /research/cooperation-and-focal-points/
 ---
 
-<link rel="stylesheet" href="../assets/css/scrolly.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/scrolly.css">
 
 ## Cooperation and focal points
 
@@ -17,9 +17,9 @@ To illustrate the point, consider <a href="https://journals.plos.org/plosone/art
 <section class="scrolly" aria-label="Seek the unicorn">
   <div class="scrolly-sticky">
     <div class="scrolly-figure">
-      <img data-step="0" class="is-active" src="../assets/images/research/unicorn.png" alt="Seek the unicorn task">
-      <img data-step="1" src="../assets/images/research/focal_regions.png" alt="Focal regions">
-      <img data-step="2" src="../assets/images/research/FRA.gif" alt="Focal region attractors">
+      <img data-step="0" class="is-active" src="{{ site.baseurl }}/assets/images/research/unicorn.png" alt="Seek the unicorn task">
+      <img data-step="1" src="{{ site.baseurl }}/assets/images/research/focal_regions.png" alt="Focal regions">
+      <img data-step="2" src="{{ site.baseurl }}/assets/images/research/FRA.gif" alt="Focal region attractors">
     </div>
   </div>
   <div class="scrolly-steps">
@@ -40,4 +40,4 @@ We fit a computational cognitive model incorporating these mechanisms to the dat
 
 [Back to research]({{ site.baseurl }}/research/)
 
-<script src="../assets/js/scrolly.js"></script>
+<script src="{{ site.baseurl }}/assets/js/scrolly.js"></script>
