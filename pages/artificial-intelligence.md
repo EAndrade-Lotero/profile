@@ -51,4 +51,14 @@ This course presents an overview of artificial intelligence. It is a starting po
   Contents
 </p>
 
+### Example material about search in a state space
+
+A state space is a way of representing a problem as the situations it can be in and the moves that connect them. A state is a description of everything about the world that matters for the problem at one moment. An action turns one state into another. With an initial state and a test for which states count as goals, these pieces form a graph: the nodes are states, and the edges are the actions that lead from one state to the next.
+
+Search in a state space is the idea of solving the problem by exploring that graph. From the initial state, a search procedure applies the available actions, generates the resulting states, and keeps the path by which each state was reached. It stops when it finds a state that passes the goal test. The solution is the sequence of actions along that path, not the goal state by itself. Search algorithms differ in which generated state they choose to expand next, but they share this picture: generate candidate states, test them, and remember how they were reached.
+
+**[Learn more about search in a state space]({{ site.baseurl }}/teaching/courses/search-in-state-space/)**
+
+
+
 [Back to courses]({{ site.baseurl }}/teaching/courses/)
