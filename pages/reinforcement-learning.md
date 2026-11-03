@@ -10,7 +10,7 @@ permalink: /teaching/courses/reinforcement-learning/
 
 This course introduces reinforcement learning: its algorithms and its applications. By the end of the course, students are able to design and implement reinforcement-learning models to solve problems.
 
-<p class="outcomes-label">
+<div class="outcomes-label">
   <span class="info-tip">
     <button type="button" class="info-tip-button" aria-label="Show expected learning outcomes" aria-describedby="rl-outcomes">
       <i class="material-icons" aria-hidden="true">info_outline</i>
@@ -25,9 +25,9 @@ This course introduces reinforcement learning: its algorithms and its applicatio
     </span>
   </span>
   Expected learning outcomes
-</p>
+</div>
 
-<p class="outcomes-label">
+<div class="outcomes-label">
   <span class="info-tip">
     <button type="button" class="info-tip-button" aria-label="Show contents" aria-describedby="rl-contents">
       <i class="material-icons" aria-hidden="true">info_outline</i>
@@ -43,6 +43,6 @@ This course introduces reinforcement learning: its algorithms and its applicatio
     </span>
   </span>
   Contents
-</p>
+</div>
 
 [Back to courses]({{ site.baseurl }}/teaching/courses/)
