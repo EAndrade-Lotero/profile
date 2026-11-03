@@ -13,7 +13,7 @@ My research projects can be summarized in the following topics:
 - [Group cognition and cooperation](#group-cognition-and-cooperation)
 - [Logic and Semantics](#logic-and-semantics)
 
-# Group cognition and cooperation
+### Group cognition and cooperation
 
 In research with Robert Goldstone, I have developed two computational models of how representations organize coordination. *Focal Regions as Attractors* assumes that people consider a limited set of natural partitions of a search space and select among them by comparing each partition with the shared history of their actions. In our *Seeking the Unicorn* experiment, the model outperformed alternative accounts and reproduced the main behavioral patterns of human pairs. 
 
@@ -33,7 +33,7 @@ In my postdoctoral research with Seth Frey at UC Davis, alongside collaborations
 
 
 
-# Logic and Semantics
+### Logic and Semantics
 
 - A misconception of logic
 - Models of language
