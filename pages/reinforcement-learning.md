@@ -10,20 +10,39 @@ permalink: /teaching/courses/reinforcement-learning/
 
 This course introduces reinforcement learning: its algorithms and its applications. By the end of the course, students are able to design and implement reinforcement-learning models to solve problems.
 
-### Expected learning outcomes
+<h3 class="outcomes-label">
+  <span class="info-tip">
+    <button type="button" class="info-tip-button" aria-label="Show expected learning outcomes" aria-describedby="rl-outcomes">
+      <i class="material-icons" aria-hidden="true">info_outline</i>
+    </button>
+    <span class="info-tip-panel" id="rl-outcomes" role="tooltip">
+      <p>By the end of the course, students are able to:</p>
+      <ol>
+        <li>Understand the conceptual approach of reinforcement learning.</li>
+        <li>Explain how different reinforcement-learning algorithms differ.</li>
+        <li>Implement reinforcement-learning models to solve problems.</li>
+      </ol>
+    </span>
+  </span>
+  Expected learning outcomes
+</h3>
 
-By the end of the course, students are able to:
-
-1. Understand the conceptual approach of reinforcement learning.
-2. Explain how different reinforcement-learning algorithms differ.
-3. Implement reinforcement-learning models to solve problems.
-
-### Contents
-
-1. The place of reinforcement learning in machine learning.
-2. Markov decision processes and dynamic programming.
-3. Monte Carlo methods and temporal-difference methods (Q-learning and SARSA).
-4. Function approximation and deep reinforcement learning.
-5. Policy-gradient methods.
+<h3 class="outcomes-label">
+  <span class="info-tip">
+    <button type="button" class="info-tip-button" aria-label="Show contents" aria-describedby="rl-contents">
+      <i class="material-icons" aria-hidden="true">info_outline</i>
+    </button>
+    <span class="info-tip-panel" id="rl-contents" role="tooltip">
+      <ol>
+        <li>The place of reinforcement learning in machine learning.</li>
+        <li>Markov decision processes and dynamic programming.</li>
+        <li>Monte Carlo methods and temporal-difference methods (Q-learning and SARSA).</li>
+        <li>Function approximation and deep reinforcement learning.</li>
+        <li>Policy-gradient methods.</li>
+      </ol>
+    </span>
+  </span>
+  Contents
+</h3>
 
 [Back to courses]({{ site.baseurl }}/teaching/courses/)

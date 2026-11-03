@@ -10,7 +10,7 @@ permalink: /teaching/courses/artificial-intelligence/
 
 This course presents an overview of artificial intelligence. It is a starting point for discussing what intelligence is and how to build agents that act intelligently, and it introduces central topics in the field. Students examine the characteristics of an intelligent agent, how problems are represented, how optimal solutions are searched for, and how reasoning and inference systems work. By the end of the course, students understand the algorithmic foundations of artificial intelligence and how they relate to other areas of knowledge. The course also presents examples of AI applied in different fields.
 
-<h3 class="outcomes-label">Expected learning outcomes
+<h3 class="outcomes-label">
   <span class="info-tip">
     <button type="button" class="info-tip-button" aria-label="Show expected learning outcomes" aria-describedby="ai-outcomes">
       <i class="material-icons" aria-hidden="true">info_outline</i>
@@ -28,9 +28,10 @@ This course presents an overview of artificial intelligence. It is a starting po
       </ol>
     </span>
   </span>
+  Expected learning outcomes
 </h3>
 
-<h3 class="outcomes-label">Contents
+<h3 class="outcomes-label">
   <span class="info-tip">
     <button type="button" class="info-tip-button" aria-label="Show contents" aria-describedby="ai-contents">
       <i class="material-icons" aria-hidden="true">info_outline</i>
@@ -47,6 +48,7 @@ This course presents an overview of artificial intelligence. It is a starting po
       </ol>
     </span>
   </span>
+  Contents
 </h3>
 
 [Back to courses]({{ site.baseurl }}/teaching/courses/)
