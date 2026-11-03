@@ -12,7 +12,7 @@ One of our core findings demonstrates that 'focal points'—psychologically sali
 
 The central idea is this: When faced with a coordination problem, humans mentally simulate a few potential scenarios. They then assess how well their current reality matches these imagined scenarios and adjust their behavior to align with the most accurate prediction (see <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/tops.12644" target="_blank" rel="noopener noreferrer">this paper</a> for a more overarching approach).
 
-To illustrate the point, consider <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254532">the following task</a>:
+To illustrate the point, consider the following task:
 
 <section class="scrolly" aria-label="Seek the unicorn">
   <div class="scrolly-sticky">
@@ -36,7 +36,7 @@ To illustrate the point, consider <a href="https://journals.plos.org/plosone/art
   </div>
 </section>
 
-We fit a computational cognitive model incorporating these mechanisms to the data. The model outperformed several alternative accounts and qualitatively reproduced the behavioral patterns observed in the experiment. See details in [this paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254532).
+We fit a computational cognitive model incorporating these mechanisms to the data. The model outperformed several alternative accounts and qualitatively reproduced the behavioral patterns observed in the experiment. See details in <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254532" target="_blank" rel="noopener noreferrer">this paper</a>.
 
 [Back to research]({{ site.baseurl }}/research/)
 
