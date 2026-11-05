@@ -26,8 +26,5 @@ In my postdoctoral research at UC Davis with Seth Frey, and in collaboration wit
 
 **[Learn more about System-Level Power](../research/cultural-evolution-of-power/)**
 
-**[Learn more about System-level power](../research/cultural-evolution-of-power/)**
-
-
 
 [Back to my profile](/profile/)
