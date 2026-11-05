@@ -8,12 +8,7 @@ permalink: /research/
 
 My research investigates how cognitive mechanisms, social interaction, and power relations shape collective intelligence. I study how groups develop complementary roles and how those roles distribute knowledge and control. My experiments and computational models show that people coordinate by selecting psychologically plausible representations that match the history of their interaction and organize complementary behavior. My current work extends this account to the distribution of power across roles. 
 
-My research projects can be summarized in the following topics:
-
-- [Group cognition and cooperation](#group-cognition-and-cooperation)
-- [Logic and Semantics](#logic-and-semantics)
-
-### Group cognition and cooperation
+My research inquiry began with the development of formal representations of meaning during my master's studies at the Institute for Logic, Language and Computation (ILLC). These representations captured subtle features of linguistic understanding, particularly those involving tense and aspect. During my PhD, however, I began to examine the assumptions about language and meaning underlying these formal accounts. This led me away from a truth-conditional account of linguistic understanding toward a view that places speakers within the social contexts of their interactions. On this view, linguistic actions cannot be understood simply as physical events or individual psychological states; they are moves in the language games through which speakers participate in shared everyday practices.
 
 In research with Robert Goldstone, I have developed two computational models of how representations organize coordination. *Focal Regions as Attractors* assumes that people consider a limited set of natural partitions of a search space and select among them by comparing each partition with the shared history of their actions. In our *Seeking the Unicorn* experiment, the model outperformed alternative accounts and reproduced the main behavioral patterns of human pairs. 
 
@@ -27,18 +22,12 @@ My work on linguistic labor further shows that roles distribute knowledge as wel
 
 **[Learn more about Division of linguistic labor](../research/division-of-linguistic-labor/)**
 
-In my postdoctoral research with Seth Frey at UC Davis, alongside collaborations with Nori Jacoby, Dalton Conley, and Ofer Tchernichovski, I extend this agenda from role complementarity to role-based power. We study how control over the rules of an interaction changes social preferences and collective outcomes. In a collective-foraging experiment presented at the Annual Meeting of the Cognitive Science Society and the International Conference on Computational Social Science, assigning rule-setting power constrained proposals away from self-interested extremes, but its effects depended on whether workers or managers held that power \citep{AndradeEtAl:CogSci26,AndradeEtAl:IC2S226}. A second experiment now underway contrasts two forms of checks and balances: vetoes over changes to the rules and vetoes over actions taken within those rules.
+In my postdoctoral research at UC Davis with Seth Frey, and in collaboration with Nori Jacoby, Dalton Conley, and Ofer Tchernichovski, I extend this agenda from role complementarity to role-based power. We investigate how control over the rules of an interaction shapes social preferences and collective outcomes. In a collective-foraging experiment presented at the Annual Meeting of the Cognitive Science Society and the International Conference on Computational Social Science, assigning rule-setting power shifted proposals away from self-interested extremes, although the effects differed depending on whether workers or managers held that power. An ongoing experiment examines two forms of checks and balances: vetoes over changes to the rules and vetoes over actions taken within those rules.
+
+**[Learn more about System-Level Power](../research/cultural-evolution-of-power/)**
 
 **[Learn more about System-level power](../research/cultural-evolution-of-power/)**
 
-
-
-### Logic and Semantics
-
-- A misconception of logic
-- Models of language
-- DRT and ...
-- Leveraging...
 
 
 [Back to my profile](/profile/)
