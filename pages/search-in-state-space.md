@@ -19,19 +19,15 @@ permalink: /teaching/courses/search-in-state-space/
   </div>
   <div class="scrolly-steps">
     <div class="scrolly-step is-active" data-step="0">
-      <p>Page 18. General idea.</p>
       <p>Initial state. The frontier contains only s₀.</p>
     </div>
     <div class="scrolly-step" data-step="1">
-      <p>Page 19. General idea.</p>
       <p>Applicable actions. From s₀ the search reaches s₂.</p>
     </div>
     <div class="scrolly-step" data-step="2">
-      <p>Page 20. General idea.</p>
       <p>Transition. From s₂ the search reaches s₅.</p>
     </div>
     <div class="scrolly-step" data-step="3">
-      <p>Page 21. General idea.</p>
       <p>Goal test. From s₅ the search reaches s₈.</p>
     </div>
   </div>
