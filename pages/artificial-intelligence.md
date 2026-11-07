@@ -55,6 +55,13 @@ This course presents an overview of artificial intelligence. It is a starting po
 
 A state space is a way of representing a problem as the situations it can be in and the moves that connect them. A state is a description of everything about the world that matters for the problem at one moment. An action turns one state into another. With an initial state and a test for which states count as goals, these pieces form a graph: the nodes are states, and the edges are the actions that lead from one state to the next.
 
+The eight queens puzzle is a concrete case. Eight queens must be placed on a chessboard so that no two share a row, a column, or a diagonal. One state space builds the placement one row at a time. A state records the columns already chosen. An action places the next queen in a column of the following row where it attacks no queen already on the board. A goal state has a queen in every row. The board below is one of the 92 goal states.
+
+<figure class="course-figure">
+  <img src="{{ site.baseurl }}/assets/images/teaching/eight-queens.png" alt="One solution of the eight queens puzzle, with queens on a1, e2, h3, f4, c5, g6, b7, and d8.">
+  <figcaption>One solution of the eight queens puzzle.</figcaption>
+</figure>
+
 Search in a state space is the idea of solving the problem by exploring that graph. From the initial state, a search procedure applies the available actions, generates the resulting states, and keeps the path by which each state was reached. It stops when it finds a state that passes the goal test. The solution is the sequence of actions along that path, not the goal state by itself. Search algorithms differ in which generated state they choose to expand next, but they share this picture: generate candidate states, test them, and remember how they were reached.
 
 **[Learn more about search in a state space]({{ site.baseurl }}/teaching/courses/search-in-state-space/)**
