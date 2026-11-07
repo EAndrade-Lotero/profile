@@ -21,16 +21,16 @@ Breadth-First Search (BFS) is a blind (uninformed) search method because it expl
   </div>
   <div class="scrolly-steps">
     <div class="scrolly-step is-active" data-step="0">
-      <p>Initial state. The frontier contains only s₀.</p>
+      <p>The frontier contains only s₀.</p>
     </div>
     <div class="scrolly-step" data-step="1">
-      <p>Applicable actions. From s₀ the search reaches s₂.</p>
+      <p>From s₀ the search reaches s₂.</p>
     </div>
     <div class="scrolly-step" data-step="2">
-      <p>Transition. From s₂ the search reaches s₅.</p>
+      <p>From s₂ the search reaches s₅.</p>
     </div>
     <div class="scrolly-step" data-step="3">
-      <p>Goal test. From s₅ the search reaches s₈.</p>
+      <p>From s₅ the search reaches s₈.</p>
     </div>
   </div>
 </section>
