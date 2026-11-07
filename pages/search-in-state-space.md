@@ -8,6 +8,8 @@ permalink: /teaching/courses/search-in-state-space/
 
 ## Search in a state space
 
+Breadth-First Search (BFS) is a blind (uninformed) search method because it explores the state space without using additional knowledge or heuristics to guide the search toward a goal. It relies only on the problem definition—the initial state, available actions, transition model, and goal test—to systematically explore possible states. Rather than evaluating which states are more promising, BFS expands the shallowest unexplored node first.
+
 <section class="scrolly" aria-label="Search in a state space">
   <div class="scrolly-sticky">
     <div class="scrolly-figure">
