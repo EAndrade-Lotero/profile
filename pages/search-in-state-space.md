@@ -8,7 +8,7 @@ permalink: /teaching/courses/search-in-state-space/
 
 ## Search in a state space
 
-Breadth-First Search (BFS) is a blind (uninformed) search method because it explores the state space without using additional knowledge or heuristics to guide the search toward a goal. It relies only on the problem definition—the initial state, available actions, transition model, and goal test—to systematically explore possible states. Rather than evaluating which states are more promising, BFS expands the shallowest unexplored node first.
+The frontier is the set of nodes (states) that have been discovered but not yet expanded. It represents the boundary between the explored and unexplored parts of the state space. At each step, the search algorithm selects a node from the frontier according to its search strategy, expands it by applying the available actions, and adds the resulting new nodes to the frontier. In Breadth-First Search, the frontier is managed as a FIFO queue (First In, First Out), ensuring that the shallowest nodes are expanded first.
 
 <section class="scrolly" aria-label="Search in a state space">
   <div class="scrolly-sticky">
@@ -35,15 +35,7 @@ Breadth-First Search (BFS) is a blind (uninformed) search method because it expl
   </div>
 </section>
 
-Advantages:
-
-- Complete: It is guaranteed to find a solution if one exists, provided the branching factor is finite.
-- Optimal: It finds a solution with the minimum number of actions, assuming all actions have equal cost.
-
-Disadvantages:
-
-- High computational cost: The number of nodes grows exponentially with search depth, requiring substantial memory and processing time.
-- Memory-intensive: It must store the frontier, which can become very large as the search progresses.
+The search terminates when a goal state is found or when the frontier becomes empty. When a node is selected from the frontier, the algorithm applies the goal test to determine whether it represents a solution. If it does, the search stops and returns the sequence of actions leading to that state. If the frontier is empty and no goal has been found, the algorithm concludes that no solution exists.
 
 [Back to the course]({{ site.baseurl }}/teaching/courses/artificial-intelligence/)
 
