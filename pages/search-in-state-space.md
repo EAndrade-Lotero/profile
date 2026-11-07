@@ -33,6 +33,16 @@ permalink: /teaching/courses/search-in-state-space/
   </div>
 </section>
 
+Advantages:
+
+- Complete: It is guaranteed to find a solution if one exists, provided the branching factor is finite.
+- Optimal: It finds a solution with the minimum number of actions, assuming all actions have equal cost.
+
+Disadvantages:
+
+- High computational cost: The number of nodes grows exponentially with search depth, requiring substantial memory and processing time.
+- Memory-intensive: It must store the frontier, which can become very large as the search progresses.
+
 [Back to the course]({{ site.baseurl }}/teaching/courses/artificial-intelligence/)
 
 <script src="{{ site.baseurl }}/assets/js/scrolly.js"></script>
