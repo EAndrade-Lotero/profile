@@ -62,21 +62,11 @@ The eight queens puzzle is a concrete case. Eight queens must be placed on a che
   <figcaption>One solution of the eight queens puzzle.</figcaption>
 </figure>
 
-**[Learn more about search in a state space]({{ site.baseurl }}/teaching/courses/search-in-state-space/)**
-
 Search in a state space is the idea of solving the problem by exploring that graph. From the initial state, a search procedure applies the available actions, generates the resulting states, and keeps the path by which each state was reached. It stops when it finds a state that passes the goal test. The solution is the sequence of actions along that path, not the goal state by itself. Search algorithms differ in which generated state they choose to expand next, but they share this picture: generate candidate states, test them, and remember how they were reached.
 
+**[Learn more about search in a state space]({{ site.baseurl }}/teaching/courses/search-in-state-space/)**
+
 One of the simplest search algorithms is Breadth-first search. It explores the state space one level at a time, starting from the initial state. At each step, it expands the shallowest node in the frontier (the set of nodes that have been generated but not yet expanded). Thus, it explores all states at a given depth before moving on to states at the next depth.
-
-Advantages:
-
-- Complete: It is guaranteed to find a solution if one exists, provided the branching factor is finite.
-- Optimal: It finds a solution with the minimum number of actions, assuming all actions have equal cost.
-
-Disadvantages:
-
-- High computational cost: The number of nodes grows exponentially with search depth, requiring substantial memory and processing time.
-- Memory-intensive: It must store the frontier, which can become very large as the search progresses.
 
 **[Learn more about breadth-first search]({{ site.baseurl }}/teaching/courses/breadth-first-search/)**
 
