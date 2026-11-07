@@ -4,7 +4,11 @@
     var images = Array.prototype.slice.call(root.querySelectorAll(".scrolly-figure img"));
     if (!steps.length || !images.length) return;
 
+    var current = -1;
+
     function activate(index) {
+      if (index === current) return;
+      current = index;
       steps.forEach(function (step, i) {
         step.classList.toggle("is-active", i === index);
       });
@@ -14,35 +18,33 @@
       });
     }
 
-    activate(0);
+    // The active step is the last one whose top edge has scrolled past the
+    // middle of the screen; the first step is the default. This works in both
+    // directions, so scrolling back up always returns to earlier steps. An
+    // IntersectionObserver with a fixed band could not reselect the first step
+    // once it had scrolled above that band.
+    function update() {
+      var mid = window.innerHeight * 0.5;
+      var best = 0;
+      steps.forEach(function (step, i) {
+        if (step.getBoundingClientRect().top <= mid) best = i;
+      });
+      activate(best);
+    }
 
-    if (!("IntersectionObserver" in window)) return;
+    var queued = false;
+    function schedule() {
+      if (queued) return;
+      queued = true;
+      window.requestAnimationFrame(function () {
+        queued = false;
+        update();
+      });
+    }
 
-    var observer = new IntersectionObserver(
-      function (entries) {
-        var visible = entries
-          .filter(function (entry) {
-            return entry.isIntersecting;
-          })
-          .sort(function (a, b) {
-            return b.intersectionRatio - a.intersectionRatio;
-          });
-
-        if (!visible.length) return;
-
-        var index = Number(visible[0].target.getAttribute("data-step"));
-        if (!Number.isNaN(index)) activate(index);
-      },
-      {
-        root: null,
-        rootMargin: "-40% 0px -40% 0px",
-        threshold: [0, 0.25, 0.5, 0.75, 1],
-      }
-    );
-
-    steps.forEach(function (step) {
-      observer.observe(step);
-    });
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    update();
   }
 
   function init() {
