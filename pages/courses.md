@@ -10,7 +10,6 @@ Courses I have taught, as listed in my <a href="{{ site.baseurl }}/assets/pdfs/C
 
 Graduate, 2021–2024:
 
-- [Reinforcement Learning]({{ site.baseurl }}/teaching/courses/reinforcement-learning/)
 - [Artificial Intelligence: Problem Representation and Solving]({{ site.baseurl }}/teaching/courses/artificial-intelligence/)
 - Machine Learning Applications
 

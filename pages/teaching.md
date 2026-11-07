@@ -11,4 +11,3 @@ At the heart of my teaching philosophy is the belief that students learn complex
 Recent syllabi from the Master's in Computer Science (MACC):
 
 - [Artificial intelligence]({{ site.baseurl }}/teaching/courses/artificial-intelligence/)
-- [Reinforcement learning]({{ site.baseurl }}/teaching/courses/reinforcement-learning/)
