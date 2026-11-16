@@ -47,7 +47,14 @@ This course introduces reinforcement learning: its algorithms and its applicatio
 
 ### Example material about Q-values
 
-Imagine training a robot to reach an exit without falling into a pit. From an AI perspective, the key question is not merely, “How should we train the agent?” but rather, “What must the agent know for learning to be possible?” This question is especially compelling because it points to a broader scientific problem: what prior structure has nature given intelligent organisms so that they can learn from experience?
+Imagine training a robot to reach an exit without falling into a pit. 
+
+<figure class="course-figure">
+  <img src="{{ site.baseurl }}/assets/images/teaching/OneDGridWorld.gif" alt="A one-dimensional grid world in which an agent moves toward the goal while its Q-values change">
+  <figcaption>An agent learning Q-values in a one-dimensional grid world.</figcaption>
+</figure>
+
+From an AI perspective, the key question is not merely, “How should we train the agent?” but rather, “What must the agent know for learning to be possible?” This question is especially compelling because it points to a broader scientific problem: what prior structure has nature given intelligent organisms so that they can learn from experience?
 
 We can approach this question from first principles. The first is that the agent and its environment form a continuous feedback loop. At each time step, the agent observes the current state and chooses an action. The environment then changes state and returns a reward that indicates how favorable the outcome was.
 
@@ -59,5 +66,6 @@ We can approach this question from first principles. The first is that the agent
 The second principle is that the agent generally chooses the action it currently expects to produce the greatest long-term return. Its estimate may be inaccurate because it is based on limited experience. The agent does not need to reason through this choice explicitly: it uses a quantity called a Q-value, written *Q(s, a)*, which estimates the total future reward from taking action *a* in state *s*. This is the central idea behind Q-values.
 
 The third principle is that the agent updates these estimates as it gains experience. Positive outcomes increase the estimated value of the actions that led to them, whereas negative outcomes decrease it. We will return to the precise update rule later. For now, the tutorial below illustrates how Q-values guide behavior and change through experience.
+
 
 [Back to courses]({{ site.baseurl }}/teaching/courses/)
