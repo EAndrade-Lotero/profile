@@ -50,7 +50,7 @@ This course introduces reinforcement learning: its algorithms and its applicatio
 Imagine training a robot to reach an exit without falling into a pit. 
 
 <figure class="course-figure">
-  <img src="{{ site.baseurl }}/assets/images/teaching/OneDGridWorld.gif" alt="A one-dimensional grid world in which an agent moves toward the goal while its Q-values change">
+  <img src="{{ site.baseurl }}/assets/images/teaching/OneDGridWorld.gif" style="width: 50%;" alt="A one-dimensional grid world in which an agent moves toward the goal while its Q-values change">
   <figcaption>An agent learning Q-values in a one-dimensional grid world.</figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ From an AI perspective, the key question is not merely, “How should we train t
 We can approach this question from first principles. The first is that the agent and its environment form a continuous feedback loop. At each time step, the agent observes the current state and chooses an action. The environment then changes state and returns a reward that indicates how favorable the outcome was.
 
 <figure class="course-figure">
-  <img src="{{ site.baseurl }}/assets/images/teaching/agent-loop.png" alt="Reinforcement-learning loop: the agent sends actions to the environment, which returns state observations and rewards">
+  <img src="{{ site.baseurl }}/assets/images/teaching/agent-loop.png" style="width: 50%;" alt="Reinforcement-learning loop: the agent sends actions to the environment, which returns state observations and rewards">
   <figcaption>The reinforcement-learning loop between an agent and its environment.</figcaption>
 </figure>
 
