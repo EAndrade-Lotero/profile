@@ -67,5 +67,6 @@ The second principle is that the agent generally chooses the action it currently
 
 The third principle is that the agent updates these estimates as it gains experience. Positive outcomes increase the estimated value of the actions that led to them, whereas negative outcomes decrease it. We will return to the precise update rule later. For now, the tutorial below illustrates how Q-values guide behavior and change through experience.
 
+**[Learn more about Q-values in this interactive tutorial](http://34.136.122.157/tutorials/q-values)**
 
 [Back to courses]({{ site.baseurl }}/teaching/courses/)
